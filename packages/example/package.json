@@ -1,0 +1,32 @@
+{
+  "name": "@messago/example",
+  "version": "0.0.1",
+  "description": "> TODO: description",
+  "author": "Sergen Cansız <sergencansiz@gmail.com>",
+  "homepage": "https://github.com/sergencansiz/messsago#readme",
+  "license": "ISC",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "typings": "./dist/index.d.ts",
+  "directories": {
+    "dist": "dist",
+    "test": "__tests__"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergencansiz/messsago.git"
+  },
+  "scripts": {
+    "test": "node ./__tests__/example.test.js",
+    "build": "npm run clean && npm run complie",
+    "complie": "tsc --build",
+    "dev": "ts-node ./src/index.ts"
+  },
+  "bugs": {
+    "url": "https://github.com/sergencansiz/messsago/issues"
+  },
+  "dependencies": {
+    "@messago/server": "^1.0.0",
+    "dotenv": "^16.0.3"
+  }
+}

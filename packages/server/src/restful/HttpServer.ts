@@ -1,3 +1,4 @@
+/*
 import * as http from "http";
 import Router from './Router';
 
@@ -13,11 +14,11 @@ export class HttpServer extends http {
     private server: null | http.Server = null;
     private routes: Map<string, Router> = new Map;
 
-    /**
+    /!**
      * Register new router for the router
      * @param path
      * @param router
-     */
+     *!/
     public route = (path: string, router: Router ): void => {
 
     }
@@ -35,9 +36,9 @@ export class HttpServer extends http {
         return null
     }
 
-    /**
+    /!**
      * Run http server
-     */
+     *!/
     public run = (): http.Server => {
         this.server = http.createServer(
             (req : http.IncomingMessage, res: http.ServerResponse): void => {
@@ -48,4 +49,4 @@ export class HttpServer extends http {
 
         return(this.server)
     }
-}
+}*/
